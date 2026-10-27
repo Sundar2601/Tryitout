@@ -12,7 +12,7 @@ export function Input({ label, placeholder, helperText, value, onChange }: Input
   const id = React.useId()
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 8, alignItems: 'flex-start', width: 420, fontFamily: 'Inter, sans-serif' }}>
-      <label htmlFor={id} style={{ fontWeight: 500, fontSize: 12, color: '#182230' }}>
+      <label htmlFor={id} style={{ fontWeight: 500, fontSize: 12, color: '#3e2b24' }}>
         {label}
       </label>
       <input
@@ -26,14 +26,14 @@ export function Input({ label, placeholder, helperText, value, onChange }: Input
           height: 40,
           padding: '0 12px',
           background: '#fff',
-          border: '1px solid #e2e6ed',
+          border: '1px solid #e7ded6',
           borderRadius: 8,
           fontFamily: 'inherit',
           fontSize: 14,
-          color: '#182230',
+          color: '#3e2b24',
         }}
       />
-      {helperText && <span style={{ fontSize: 12, color: '#667085' }}>{helperText}</span>}
+      {helperText && <span style={{ fontSize: 12, color: '#8c7a74' }}>{helperText}</span>}
     </div>
   )
 }

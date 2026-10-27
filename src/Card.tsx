@@ -20,13 +20,13 @@ export function Card({ title, description, actionLabel, onAction }: CardProps) {
         width: 420,
         padding: 24,
         background: '#fff',
-        border: '1px solid #e2e6ed',
+        border: '1px solid #e7ded6',
         borderRadius: 12,
         fontFamily: 'Inter, sans-serif',
       }}
     >
-      <p style={{ margin: 0, fontWeight: 600, fontSize: 16, color: '#182230' }}>{title}</p>
-      <p style={{ margin: 0, fontWeight: 400, fontSize: 14, lineHeight: 1.45, color: '#667085' }}>{description}</p>
+      <p style={{ margin: 0, fontWeight: 600, fontSize: 16, color: '#3e2b24' }}>{title}</p>
+      <p style={{ margin: 0, fontWeight: 400, fontSize: 14, lineHeight: 1.45, color: '#8c7a74' }}>{description}</p>
       <button
         onClick={onAction}
         style={{
@@ -40,7 +40,7 @@ export function Card({ title, description, actionLabel, onAction }: CardProps) {
           fontFamily: 'inherit',
           fontWeight: 500,
           fontSize: 12,
-          color: '#2563eb',
+          color: '#d97706',
         }}
       >
         {actionLabel}

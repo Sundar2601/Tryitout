@@ -8,8 +8,8 @@ export interface BadgeProps {
 }
 
 const styles = {
-  active: { background: '#eff5ff', color: '#2563eb', dot: statusDotActive },
-  neutral: { background: '#f2f4f7', color: '#667085', dot: statusDotNeutral },
+  active: { background: '#fff1e6', color: '#d97706', dot: statusDotActive },
+  neutral: { background: '#f2e9e3', color: '#8c7a74', dot: statusDotNeutral },
 }
 
 export function Badge({ label, variant = 'active' }: BadgeProps) {

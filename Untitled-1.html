@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design System Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 48px; font-family: Inter, sans-serif; background: #f9fafb; color: #3e2b24; }
+    h1 { font-size: 20px; font-weight: 600; margin: 0 0 32px; }
+    section { margin-bottom: 40px; }
+    h2 { font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: .06em; color: #8c7a74; margin: 0 0 16px; }
+    .row { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+
+    /* Button */
+    .btn { display: inline-flex; align-items: center; justify-content: center; height: 40px; padding: 0 16px; border-radius: 8px; border: 1px solid; font: 500 14px Inter, sans-serif; cursor: pointer; }
+    .btn-primary { background: #d97706; border-color: #d97706; color: #fff; }
+    .btn-secondary { background: #fff; border-color: #e7ded6; color: #3e2b24; }
+    .btn:disabled { opacity: .5; cursor: not-allowed; }
+
+    /* Input */
+    .input { display: flex; flex-direction: column; gap: 8px; align-items: flex-start; width: 420px; }
+    .input label { font-weight: 500; font-size: 12px; color: #3e2b24; }
+    .input input { width: 100%; height: 40px; padding: 0 12px; background: #fff; border: 1px solid #e7ded6; border-radius: 8px; font: 400 14px Inter, sans-serif; color: #3e2b24; }
+    .input input::placeholder { color: #8c7a74; }
+    .input span { font-size: 12px; color: #8c7a74; }
+
+    /* Badge */
+    .badge { display: inline-flex; align-items: center; gap: 6px; height: 26px; padding: 0 10px; border-radius: 100px; font-weight: 500; font-size: 12px; white-space: nowrap; }
+    .badge img { display: block; width: 6px; height: 6px; }
+    .badge-active { background: #fff1e6; color: #d97706; }
+    .badge-neutral { background: #f2e9e3; color: #8c7a74; }
+
+    /* Card */
+    .card { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; width: 420px; padding: 24px; background: #fff; border: 1px solid #e7ded6; border-radius: 12px; }
+    .card p { margin: 0; }
+    .card .title { font-weight: 600; font-size: 16px; color: #3e2b24; }
+    .card .desc { font-size: 14px; line-height: 1.45; color: #8c7a74; }
+    .card button { display: flex; align-items: center; gap: 6px; padding: 0; border: 0; background: none; cursor: pointer; font: 500 12px Inter, sans-serif; color: #d97706; }
+    .card button img { display: block; width: 14px; height: 14px; }
+  </style>
+</head>
+<body>
+  <h1>Design System Preview</h1>
+
+  <section>
+    <h2>Button</h2>
+    <div class="row">
+      <button class="btn btn-primary">Get started</button>
+      <button class="btn btn-secondary">Learn more</button>
+      <button class="btn btn-primary" disabled>Disabled</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Input</h2>
+    <div class="input">
+      <label for="email">Email address</label>
+      <input id="email" type="email" placeholder="you@company.com">
+      <span>Use your work email address.</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Badge</h2>
+    <div class="row">
+      <div class="badge badge-active"><img src="src/assets/status-dot-active.svg" alt="">Active</div>
+      <div class="badge badge-neutral"><img src="src/assets/status-dot-neutral.svg" alt="">Draft</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Card</h2>
+    <div class="card">
+      <p class="title">Your next great idea</p>
+      <p class="desc">Start small. Bring a little structure to what you’re building.</p>
+      <button>Explore project <img src="src/assets/arrow-right.svg" alt=""></button>
+    </div>
+  </section>
+</body>
+</html>
