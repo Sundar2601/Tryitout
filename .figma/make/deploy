@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+rm -rf .figma/make/deploy-dist
+mkdir -p .figma/make/deploy-dist/src
+cp Untitled-1.html .figma/make/deploy-dist/index.html
+cp -R src/assets .figma/make/deploy-dist/src/assets
+figma make deploy --build-dir .figma/make/deploy-dist

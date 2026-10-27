@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+rm -rf .figma/make/preview-dist
+mkdir -p .figma/make/preview-dist/src
+cp Untitled-1.html .figma/make/preview-dist/index.html
+cp -R src/assets .figma/make/preview-dist/src/assets
+figma make deploy-preview --build-dir .figma/make/preview-dist
